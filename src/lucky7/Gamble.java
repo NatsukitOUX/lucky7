@@ -37,15 +37,15 @@ public class Gamble {
 		                    System.out.println("Congratulations! You won 3€!");
 		                }
 		            } else {
-		                System.out.println("You lost.");
+		                System.out.println("You lost.");//tell the user he lost 
 		            }
 
-		            // Ask if the player wants to play again
+		            // Ask if the player wants to play again or quit the game 
 		            System.out.print("Do you want to play again? (yes/no): ");
 		            String playAgain = scanner.next().toLowerCase();
 
 		            if (!playAgain.equals("yes")) {
-		                System.out.println("Thanks for playing! You finished with " + money + "€.");
+		                System.out.println("Thanks for playing! You finished with " + money + "€.");//shows the money the player have 
 		                break; // Exit the loop if the player doesn't want to play again
 		            }
 		        }
