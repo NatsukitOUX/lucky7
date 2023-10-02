@@ -25,7 +25,7 @@ public class Gamble {
 		            System.out.println("Random Number 2: " + number2);
 		            System.out.println("Random Number 3: " + number3);
 
-		            if (number1 == 7 || number2 == 7 || number3 == 7) {
+		            if (number1 == 7 || number2 == 7 || number3 == 7) {//check if at least one number equal 7
 		                if (number1 == 7 && number2 == 7 && number3 == 7) {
 		                    money += 10; // Player wins 10€ for all sevens
 		                    System.out.println("Congratulations! You won 10€!");
@@ -45,7 +45,7 @@ public class Gamble {
 		            String playAgain = scanner.next().toLowerCase();
 
 		            if (!playAgain.equals("yes")) {
-		                System.out.println("Thanks for playing! You finished with " + money + "€.");//shows the money the player have 
+		                System.out.println("Thanks for playing! You finished with " + money + "€.");//shows the money the player have after the payer quit
 		                break; // Exit the loop if the player doesn't want to play again
 		            }
 		        }
